@@ -1,0 +1,37 @@
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+body{
+    background-color:#87cefa		;
+}
+.defineTextoTitulo{
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+    color: white
+}
+.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .custom-select {
+  height: calc(6.0em + 1rem + 2px);
+}
+
+.boxShadowInput{
+    animation: mymove 5s infinite
+}
+
+@keyframes mymove{
+    50% {box-shadow: 10px 20px 30px #0769a6}
+}
