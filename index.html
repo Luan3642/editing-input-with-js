@@ -2,44 +2,83 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Engagement&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css" <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="meucss.css">
+    <link rel="stylesheet" href="css/meucss.css">
     <title>Site barra</title>
 </head>
 
 <body>
-    <script src="meujs.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/meujs.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mt-5" align="center"> 
-                <h1 class="defineTextoTitulo"><strong>Site searching</strong></h1>
-                <hr></hr>
+            <div class="col-md-12 mt-5" align="center">
+                <p>Choose Text</p>
+                <hr class="">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 mt-8" align="center">
-                <button type="button" class="btn btn-primary">Upper Case</button>
-                <button type="button" class="btn btn-secondary">Lower Case</button>
-                <button type="button" class="btn btn-success">Camel Case</button>
-                <button type="button" class="btn btn-danger">delete space</button>
-                
+            <div class="col-md-12 mt-6" align="center">
+                <button type="button" class="btn btn-primary " id="upperCase" onclick="uper()">Upper Case</button>
+                <button type="button" class="btn btn-secondary" onclick="lower()">Lower Case</button>
+                <button type="button" class="btn btn-success" onclick="camelCase()">Camel Case</button>
+                <button type="button" class="btn btn-danger" onclick="deleteSpace()">Delete space</button>
+                <button type="button" class="btn btn-warning"onclick="underline()">Text underline</button>
+                <button type="button" class="btn btn-info" onclick="alternUpperAndLower()">Upper and Lower</button>
+                <button type="button" class="btn btn-dark">Delete words</button>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 mt-2" align="center">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 mt-2" align="center">
                 <div class="input-group input-group-lg boxShadowInput">
                     <input placeholder="Digite seu texto" type="text" class="form-control" aria-label="Large"
-                        aria-describedby="inputGroup-sizing-sm">
+                        aria-describedby="inputGroup-sizing-sm" id="caixa">
                 </div>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-1" id="joga"></div>
         </div>
+
+        <!--
+        <div class="row">
+                <div class="col-md-12 mt-4" align="center">
+                    <button class="btn btn-success" onclick="capturaTexto()" type="submit">Enviar</button>
+                </div>
+        </div>
+
+    -->
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 mt-10 defineFooterColor">
+                <footer>
+                    <div class="row">
+                        <div class="col-md-12" align="center">
+                            <p class="defineTexto">Luan Magalhaes</p>
+                            <a href="https://www.linkedin.com/in/luan-magalh%C3%A3es-2a918a153/" target="_blank">
+                                <img src="image/linkedin.png" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/luan3642/" target="_blank">
+                                <img src="image/instagram.png" alt="">
+                            </a>
+                            <a href="https://www.facebook.com/luan.magalhaes.100/" target="_blank">
+                                <img src="image/facebook.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </footer>
+        </div>
     </div>
     </div>
 </body>

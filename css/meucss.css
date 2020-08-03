@@ -1,0 +1,114 @@
+p {
+    font-family: 'Engagement', cursive;
+    color: white;
+    font-size: 4.0rem
+}
+
+hr {
+    background: url('http://i.stack.imgur.com/37Aip.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 18px;
+    border: 0;
+    position: relative;
+}
+
+hr:before,
+hr:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 2px;
+    top: 8px;
+}
+
+hr:before {
+    left: 0;
+    right: 50%;
+    margin-right: 10px;
+}
+
+hr:after {
+    right: 0;
+    left: 50%;
+    margin-left: 10px;
+}
+
+body {
+    /*background-color: #ccff33;*/
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.defineTextoTitulo {
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+    color: white
+}
+
+.input-group-lg>.form-control:not(textarea),
+.input-group-lg>.custom-select {
+    height: calc(6.0em + 1rem + 2px);
+}
+
+.boxShadowInput {
+    animation: mymove 5s infinite
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 10px 20px 30px #0769a6
+    }
+}
+
+
+
+/* Button */
+
+
+
+
+.toast {
+    transition: 0.32s all ease-in-out
+}
+
+.toast-container--fade {
+    right: 0;
+    bottom: 0
+}
+
+.toast-container--fade .toast-wrapper {
+    display: inline-block
+}
+
+.toast.fade-init {
+    opacity: 0
+}
+
+.toast.fade-show {
+    opacity: 1
+}
+
+.toast.fade-hide {
+    opacity: 0
+}
+
+.defineTexto {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.0rem
+}
+
+.defineFooterColor {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
