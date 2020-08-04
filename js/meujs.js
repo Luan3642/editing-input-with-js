@@ -54,19 +54,6 @@ function underline() {
     }
 }
 
-// faca um for step a cada 1 interacao deixa em UPER CASE
-/*
-function removeEspaco(array) {
-
-    var filterArray = array.filter(function (valor) {
-        return Boolean(valor);
-    });
-
-    return filterArray;
-}
-*/
-
-
 function alternUpperAndLower() {
     let caixa = document.getElementById("caixa")
     let texto = caixa.value
@@ -83,7 +70,7 @@ function alternUpperAndLower() {
         }
         const valor = textoFinal.join("");
         caixa.value = valor
-        
+
     }
 }
 
@@ -93,13 +80,113 @@ function deleteWorlds() {
     let textoFinal = []
     if (texto.value != "") {
         document.getElementById("caixa").value = ""
-        for(let elemento in texto){
-            if(elemento < 3){
+        for (let elemento in texto) {
+            if (elemento < 3) {
                 caixa.value = "";
-            } else{
+            } else {
                 caixa.value = texto;
             }
         }
-        
+
     }
 }
+
+//First Button
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebutton").click(function () {
+        const element = document.querySelector('.animatebutton');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+//Second button 
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebuttonSecond").click(function () {
+        const element = document.querySelector('.animatebuttonSecond');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+//Three button 
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebuttonThree").click(function () {
+        const element = document.querySelector('.animatebuttonThree');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+//FourButton
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebuttonFour").click(function () {
+        const element = document.querySelector('.animatebuttonFour');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+//FiveButton
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebuttonFive").click(function () {
+        const element = document.querySelector('.animatebuttonFive');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+//SixButton
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebuttonSix").click(function () {
+        const element = document.querySelector('.animatebuttonSix');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+//SevenButton
+$(document).ready(function () {
+    // Bounce button
+    $("#animatebuttonSeven").click(function () {
+        const element = document.querySelector('.animatebuttonSeven');
+        element.classList.add('animated', 'tada');
+        setTimeout(function () {
+            element.classList.remove('tada');
+        }, 1000);
+    });
+
+});
+
+
+// dark mode
+
+const btn = document.querySelector(".btn-toggle");
+
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+});
