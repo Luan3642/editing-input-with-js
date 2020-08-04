@@ -55,19 +55,51 @@ function underline() {
 }
 
 // faca um for step a cada 1 interacao deixa em UPER CASE
+/*
+function removeEspaco(array) {
+
+    var filterArray = array.filter(function (valor) {
+        return Boolean(valor);
+    });
+
+    return filterArray;
+}
+*/
+
 
 function alternUpperAndLower() {
-    let vetor = []
     let caixa = document.getElementById("caixa")
     let texto = caixa.value
+    let textoFinal = []
     if (texto.value != "") {
         document.getElementById("caixa").value = ""
-        for(let i = 0; i<texto; i+=1){
-            vetor[i] = texto.toUpperCase() 
-            console.log(vetor)
+        let juntaTexto = texto.split(" ")
+        let arrumaTexto = juntaTexto.join("")
+        for (let i = 0; i < arrumaTexto.length; i += 2) {
+            for (let j = 1; j < arrumaTexto.length; j += 2) {
+                textoFinal[i] = arrumaTexto[i].toUpperCase()
+                textoFinal[j] = arrumaTexto[j].toLowerCase()
+            }
         }
+        const valor = textoFinal.join("");
+        caixa.value = valor
+        
+    }
+}
 
-       
+function deleteWorlds() {
+    let caixa = document.getElementById("caixa")
+    let texto = caixa.value
+    let textoFinal = []
+    if (texto.value != "") {
+        document.getElementById("caixa").value = ""
+        for(let elemento in texto){
+            if(elemento < 3){
+                caixa.value = "";
+            } else{
+                caixa.value = texto;
+            }
+        }
         
     }
 }
